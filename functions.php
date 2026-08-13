@@ -122,6 +122,8 @@ add_action( 'widgets_init', 'ct_custom_widgets_init' );
 function ct_custom_scripts() {
 	wp_enqueue_style( 'ct-custom-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'dashicons' );
+
 	wp_enqueue_script( 'ct-custom-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'ct-custom-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

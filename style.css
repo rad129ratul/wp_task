@@ -55,8 +55,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  */
 
 html {
-	line-height: 1.15; /* 1 */
-	-webkit-text-size-adjust: 100%; /* 2 */
+	line-height: 1.15;
+	/* 1 */
+	-webkit-text-size-adjust: 100%;
+	/* 2 */
 }
 
 /* Sections
@@ -89,9 +91,12 @@ h1 {
  */
 
 hr {
-	box-sizing: content-box; /* 1 */
-	height: 0; /* 1 */
-	overflow: visible; /* 2 */
+	box-sizing: content-box;
+	/* 1 */
+	height: 0;
+	/* 1 */
+	overflow: visible;
+	/* 2 */
 }
 
 /**
@@ -100,8 +105,10 @@ hr {
  */
 
 pre {
-	font-family: monospace, monospace; /* 1 */
-	font-size: 1em; /* 2 */
+	font-family: monospace, monospace;
+	/* 1 */
+	font-size: 1em;
+	/* 2 */
 }
 
 /* Text-level semantics
@@ -121,9 +128,12 @@ a {
  */
 
 abbr[title] {
-	border-bottom: none; /* 1 */
-	text-decoration: underline; /* 2 */
-	text-decoration: underline dotted; /* 2 */
+	border-bottom: none;
+	/* 1 */
+	text-decoration: underline;
+	/* 2 */
+	text-decoration: underline dotted;
+	/* 2 */
 }
 
 /**
@@ -143,8 +153,10 @@ strong {
 code,
 kbd,
 samp {
-	font-family: monospace, monospace; /* 1 */
-	font-size: 1em; /* 2 */
+	font-family: monospace, monospace;
+	/* 1 */
+	font-size: 1em;
+	/* 2 */
 }
 
 /**
@@ -200,10 +212,14 @@ input,
 optgroup,
 select,
 textarea {
-	font-family: inherit; /* 1 */
-	font-size: 100%; /* 1 */
-	line-height: 1.15; /* 1 */
-	margin: 0; /* 2 */
+	font-family: inherit;
+	/* 1 */
+	font-size: 100%;
+	/* 1 */
+	line-height: 1.15;
+	/* 1 */
+	margin: 0;
+	/* 2 */
 }
 
 /**
@@ -212,7 +228,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+	/* 1 */
 	overflow: visible;
 }
 
@@ -222,7 +239,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+	/* 1 */
 	text-transform: none;
 }
 
@@ -276,12 +294,18 @@ fieldset {
  */
 
 legend {
-	box-sizing: border-box; /* 1 */
-	color: inherit; /* 2 */
-	display: table; /* 1 */
-	max-width: 100%; /* 1 */
-	padding: 0; /* 3 */
-	white-space: normal; /* 1 */
+	box-sizing: border-box;
+	/* 1 */
+	color: inherit;
+	/* 2 */
+	display: table;
+	/* 1 */
+	max-width: 100%;
+	/* 1 */
+	padding: 0;
+	/* 3 */
+	white-space: normal;
+	/* 1 */
 }
 
 /**
@@ -307,8 +331,10 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
-	box-sizing: border-box; /* 1 */
-	padding: 0; /* 2 */
+	box-sizing: border-box;
+	/* 1 */
+	padding: 0;
+	/* 2 */
 }
 
 /**
@@ -326,8 +352,10 @@ textarea {
  */
 
 [type="search"] {
-	-webkit-appearance: textfield; /* 1 */
-	outline-offset: -2px; /* 2 */
+	-webkit-appearance: textfield;
+	/* 1 */
+	outline-offset: -2px;
+	/* 2 */
 }
 
 /**
@@ -344,8 +372,10 @@ textarea {
  */
 
 ::-webkit-file-upload-button {
-	-webkit-appearance: button; /* 1 */
-	font: inherit; /* 2 */
+	-webkit-appearance: button;
+	/* 1 */
+	font: inherit;
+	/* 2 */
 }
 
 /* Interactive
@@ -402,7 +432,12 @@ textarea {
 	line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	clear: both;
 }
 
@@ -410,7 +445,10 @@ p {
 	margin-bottom: 1.5em;
 }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
 	font-style: italic;
 }
 
@@ -434,18 +472,23 @@ pre {
 	padding: 1.6em;
 }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
 
-abbr, acronym {
+abbr,
+acronym {
 	border-bottom: 1px dotted #666;
 	cursor: help;
 }
 
-mark, ins {
+mark,
+ins {
 	background: #fff9c0;
 	text-decoration: none;
 }
@@ -480,7 +523,8 @@ hr {
 	margin-bottom: 1.5em;
 }
 
-ul, ol {
+ul,
+ol {
 	margin: 0 0 1.5em 3em;
 }
 
@@ -492,8 +536,8 @@ ol {
 	list-style: decimal;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
 	margin-bottom: 0;
 	margin-left: 1.5em;
 }
@@ -548,7 +592,8 @@ input[type="submit"]:hover {
 	border-color: #ccc #bbb #aaa;
 }
 
-button:active, button:focus,
+button:active,
+button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
@@ -611,6 +656,22 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+# Form fields (base scaffolding — refined again in Phase 7)
+--------------------------------------------------------------*/
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+textarea {
+	background: var(--color-field-bg);
+	border: none;
+	border-radius: 2px;
+	padding: 14px 16px;
+	color: #999999;
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
 a {
@@ -621,7 +682,9 @@ a:visited {
 	color: purple;
 }
 
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
 	color: midnightblue;
 }
 
@@ -629,7 +692,8 @@ a:focus {
 	outline: thin dotted;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
 	outline: 0;
 }
 
@@ -664,8 +728,8 @@ a:hover, a:active {
 	top: 0;
 }
 
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
+.main-navigation ul ul li:hover>ul,
+.main-navigation ul ul li.focus>ul {
 	left: 100%;
 }
 
@@ -673,8 +737,8 @@ a:hover, a:active {
 	width: 200px;
 }
 
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
+.main-navigation ul li:hover>ul,
+.main-navigation ul li.focus>ul {
 	left: auto;
 }
 
@@ -698,14 +762,15 @@ a:hover, a:active {
 	.menu-toggle {
 		display: none;
 	}
+
 	.main-navigation ul {
 		display: block;
 	}
 }
 
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
 	margin: 0 0 1.5em;
 	overflow: hidden;
 }
@@ -739,7 +804,8 @@ a:hover, a:active {
 	padding: 0;
 	position: absolute !important;
 	width: 1px;
-	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+	word-wrap: normal !important;
+	/* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 
 .screen-reader-text:focus {
@@ -982,4 +1048,340 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/*--------------------------------------------------------------
+# CT Custom — Component Overrides
+--------------------------------------------------------------*/
+:root {
+	--color-primary: #ff6a00;
+	--color-primary-dark: #e65c00;
+	--color-text-body: #666666;
+	--color-text-dark: #333333;
+	--color-border-light: #e6e6e6;
+	--color-field-bg: #f2f2f2;
+	--font-stack: Arial, Helvetica, "Open Sans", sans-serif;
+}
+
+body {
+	font-family: var(--font-stack);
+	color: var(--color-text-body);
+}
+
+/* Top Bar */
+.top-bar {
+	background-color: var(--color-primary-dark);
+	color: #ffffff;
+	font-size: 13px;
+	padding: 10px 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+}
+
+.top-bar-phone {
+	font-weight: 400;
+}
+
+.top-bar a {
+	color: #ffffff;
+	text-decoration: none;
+	margin-left: 15px;
+}
+
+.top-bar-links a:last-child {
+	font-weight: 700;
+}
+
+.top-bar a:hover {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+/* Site Header / Branding */
+.site-header {
+	background: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 5%;
+	flex-wrap: wrap;
+}
+
+.site-branding .site-title {
+	font-size: 28px;
+	font-weight: 800;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.site-branding .site-title a {
+	color: var(--color-text-dark);
+	text-decoration: none;
+}
+
+.site-branding .site-title a span.logo-highlight {
+	color: var(--color-primary);
+}
+
+/* Primary Navigation — explicitly overrides base .main-navigation float/width */
+.main-navigation {
+	clear: none;
+	display: block;
+	float: none;
+	width: auto;
+}
+
+.main-navigation ul#primary-menu {
+	display: flex;
+	gap: 28px;
+}
+
+.main-navigation ul li a {
+	color: var(--color-text-dark);
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	padding: 6px 0;
+	border-bottom: 3px solid transparent;
+}
+
+.main-navigation ul li.current-menu-item>a,
+.main-navigation ul li.current_page_item>a {
+	color: var(--color-primary);
+	border-bottom-color: var(--color-primary);
+}
+
+.main-navigation ul ul {
+	background: #ffffff;
+	border: 1px solid var(--color-border-light);
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+	min-width: 180px;
+	padding: 8px 0;
+}
+
+.main-navigation ul ul li {
+	float: none;
+}
+
+.main-navigation ul ul li a {
+	padding: 8px 18px;
+	border-bottom: none;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.main-navigation ul ul li.current-menu-item>a {
+	font-weight: 700;
+	border-bottom: none;
+}
+
+/* Keep mobile toggle behavior from base theme intact */
+@media screen and (min-width: 37.5em) {
+	.main-navigation ul#primary-menu {
+		display: flex;
+	}
+}
+
+/* Reach Us / Footer */
+.reach-us-wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 5% 40px;
+}
+
+.reach-us h2 {
+	color: var(--color-primary);
+	font-size: 22px;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+	padding-bottom: 12px;
+	border-bottom: 3px solid #333333;
+	display: inline-block;
+}
+
+.reach-us-address,
+.reach-us-contact {
+	color: var(--color-text-dark);
+	line-height: 1.6;
+	margin: 0 0 12px;
+}
+
+.reach-us-social {
+	display: flex;
+	gap: 10px;
+	margin-top: 15px;
+}
+
+.reach-us-social a {
+	width: 36px;
+	height: 36px;
+	background: #cccccc;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2px;
+	text-decoration: none;
+}
+
+.reach-us-social a .dashicons {
+	font-size: 18px;
+	width: 18px;
+	height: 18px;
+}
+
+.reach-us-social a.social-facebook {
+	background: #333333;
+}
+
+/* Form fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+textarea {
+	background: var(--color-field-bg);
+	border: none;
+	border-radius: 2px;
+	padding: 14px 16px;
+	color: #999999;
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Contact Form 7 — Field & Layout Overrides
+--------------------------------------------------------------*/
+.ct-contact-form {
+	max-width: 470px;
+}
+
+.ct-contact-form p {
+	margin-bottom: 15px;
+}
+
+.ct-contact-form .form-row-split {
+	display: flex;
+	gap: 15px;
+	margin-bottom: 0;
+}
+
+.ct-contact-form .form-row-split .wpcf7-form-control-wrap {
+	flex: 1;
+	margin-bottom: 15px;
+}
+
+.wpcf7-form-control.wpcf7-text,
+.wpcf7-form-control.wpcf7-tel,
+.wpcf7-form-control.wpcf7-email,
+.wpcf7-form-control.wpcf7-textarea {
+	display: block;
+	width: 100%;
+	background-color: var(--color-field-bg);
+	border: none;
+	border-radius: 2px;
+	padding: 14px 16px;
+	color: #333333;
+	font-size: 14px;
+	font-family: var(--font-stack);
+}
+
+.wpcf7-form-control.wpcf7-textarea {
+	min-height: 140px;
+	resize: vertical;
+}
+
+.wpcf7-form-control.wpcf7-text::placeholder,
+.wpcf7-form-control.wpcf7-tel::placeholder,
+.wpcf7-form-control.wpcf7-email::placeholder,
+.wpcf7-form-control.wpcf7-textarea::placeholder {
+	color: #999999;
+}
+
+.wpcf7-form-control.wpcf7-text:focus,
+.wpcf7-form-control.wpcf7-tel:focus,
+.wpcf7-form-control.wpcf7-email:focus,
+.wpcf7-form-control.wpcf7-textarea:focus {
+	outline: 2px solid var(--color-primary);
+	outline-offset: -1px;
+}
+
+.wpcf7-form-control.wpcf7-submit {
+	background-color: var(--color-primary);
+	color: #ffffff;
+	border: none;
+	border-radius: 2px;
+	padding: 14px 40px;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	cursor: pointer;
+}
+
+.wpcf7-form-control.wpcf7-submit:hover {
+	background-color: var(--color-primary-dark);
+}
+
+/* CF7 validation/response styling so error states don't visually break the layout */
+.wpcf7-not-valid-tip {
+	color: #e2401c;
+	font-size: 12px;
+	margin-top: 4px;
+}
+
+.wpcf7-response-output {
+	margin: 15px 0 0;
+	padding: 10px 14px;
+	border-radius: 2px;
+	font-size: 13px;
+}
+
+/*--------------------------------------------------------------
+# Responsive Patches (below 37.5em breakpoint)
+--------------------------------------------------------------*/
+@media screen and (max-width: 37.4375em) {
+
+	/* Top bar: stack phone and login/signup links, prevent overflow */
+	.top-bar {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 6px;
+		padding: 10px 5%;
+	}
+
+	.top-bar-links a {
+		margin-left: 0;
+		margin-right: 15px;
+	}
+
+	/* Site header: stack branding and nav vertically */
+	.site-header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	/* Contact Form 7: stack Phone/Email instead of side-by-side */
+	.ct-contact-form .form-row-split {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.ct-contact-form .form-row-split .wpcf7-form-control-wrap {
+		margin-bottom: 15px;
+	}
+
+	/* Reach Us: allow social icons to wrap cleanly */
+	.reach-us-social {
+		flex-wrap: wrap;
+	}
+
+	/* Footer site-info: stack instead of forcing inline overflow */
+	.site-info {
+		text-align: center;
+		padding: 15px 5%;
+	}
 }

@@ -2,10 +2,6 @@
 /**
  * The header for our theme
  *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
  * @package CT_Custom
  */
 
@@ -24,10 +20,33 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ct-custom' ); ?></a>
 
+	<div class="top-bar">
+		<div class="top-bar-phone">
+			<?php esc_html_e( 'Call Us Now!', 'ct-custom' ); ?>
+			<?php $ct_phone = get_theme_mod( 'ct_custom_phone', '385.154.11.28.35' ); ?>
+			<?php if ( $ct_phone ) : ?>
+				<a href="tel:<?php echo esc_attr( preg_replace( '/[^0-9+]/', '', $ct_phone ) ); ?>"><?php echo esc_html( $ct_phone ); ?></a>
+			<?php endif; ?>
+		</div>
+		<div class="top-bar-links">
+			<a href="<?php echo esc_url( wp_login_url() ); ?>"><?php esc_html_e( 'Login', 'ct-custom' ); ?></a>
+			<a href="<?php echo esc_url( wp_registration_url() ); ?>"><?php esc_html_e( 'Signup', 'ct-custom' ); ?></a>
+		</div>
+	</div><!-- .top-bar -->
+
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
-			the_custom_logo();
+			$ct_logo_url = get_theme_mod( 'ct_custom_logo' );
+			if ( $ct_logo_url ) :
+				?>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="custom-logo-link">
+					<img src="<?php echo esc_url( $ct_logo_url ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
+				</a>
+				<?php
+			else :
+				the_custom_logo();
+			endif;
 			if ( is_front_page() && is_home() ) :
 				?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
