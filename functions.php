@@ -120,6 +120,8 @@ add_action( 'widgets_init', 'ct_custom_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ct_custom_scripts() {
+	wp_enqueue_style( 'ct-custom-google-fonts', 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap', array(), null );
+	
 	wp_enqueue_style( 'ct-custom-style', get_stylesheet_uri() );
 
 	wp_enqueue_style( 'dashicons' );

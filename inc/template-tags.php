@@ -146,3 +146,37 @@ if ( ! function_exists( 'ct_custom_post_thumbnail' ) ) :
 		endif; // End is_singular().
 	}
 endif;
+
+if ( ! function_exists( 'ct_custom_breadcrumbs' ) ) :
+	function ct_custom_breadcrumbs() {
+		if ( is_front_page() ) {
+			return;
+		}
+
+		echo '<nav class="ct-breadcrumbs" aria-label="' . esc_attr__( 'Breadcrumb', 'ct-custom' ) . '">';
+
+		printf(
+			'<a href="%1$s">%2$s</a>',
+			esc_url( home_url( '/' ) ),
+			esc_html__( 'Home', 'ct-custom' )
+		);
+
+		if ( is_page() ) {
+			$ancestors = array_reverse( get_post_ancestors( get_the_ID() ) );
+
+			foreach ( $ancestors as $ancestor_id ) {
+				printf(
+					' / <a href="%1$s">%2$s</a>',
+					esc_url( get_permalink( $ancestor_id ) ),
+					esc_html( get_the_title( $ancestor_id ) )
+				);
+			}
+
+			echo ' / <span class="ct-breadcrumbs-current">' . esc_html( get_the_title() ) . '</span>';
+		} elseif ( is_single() ) {
+			echo ' / <span class="ct-breadcrumbs-current">' . esc_html( get_the_title() ) . '</span>';
+		}
+
+		echo '</nav><!-- .ct-breadcrumbs -->';
+	}
+endif;
